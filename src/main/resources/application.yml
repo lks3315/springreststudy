@@ -1,0 +1,28 @@
+# Logging
+#logging.level.org.springframework=INFO
+#logging.level.org.springframework.web=DEBUG
+# logging.level.org.springframework.context.annotation=TRACE
+
+server:
+  port: 8088
+
+#Logging
+logging:
+  level:
+    org.springframework: DEBUG
+
+spring:
+  jpa:
+    show-sql: true
+  messages:
+    basename: messages
+  security:
+    user:
+      name: tvstorm
+      password: tvstorm123
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
